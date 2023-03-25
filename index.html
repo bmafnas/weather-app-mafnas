@@ -13,6 +13,14 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
   </head>
   <body>
@@ -34,29 +42,32 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-primary w-100 search-btn"
                 />
               </div>
             </div>
           </form>
           <div class="overview">
             <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
           </div>
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
-                <img src="" atl="Clear" id="icon" />
                 <strong id="temperature"></strong><span class="units"> °F</span>
+                <img src="" atl="Clear" id="icon" />
               </div>
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> mph</li>
+                <li id="description"></li>
+
+                <li><b>Humidity:</b> <span id="humidity"></span>%</li>
+                <li><b>Wind:</b> <span id="wind"></span> mph</li>
+                <li>
+                  <em class="last-update"
+                    >Last updated: <span id="date"></span
+                  ></em>
+                </li>
               </ul>
             </div>
           </div>
